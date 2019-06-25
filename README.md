@@ -2,6 +2,11 @@
 
 > Express boilerplate for Node.js with support for mongoDb.
 
+## Table of Contents
+* [Install & Use](#install-and-use)
+* [Commands](#commands)
+* [Testing](#testing)
+
 ## Install & Use
 
 Start by cloning this repository
