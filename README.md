@@ -7,7 +7,7 @@
 * [Commands](#commands)
 * [Testing](#testing)
 
-## Install & Use
+## Install and Use
 
 Start by cloning this repository
 
