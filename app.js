@@ -11,7 +11,6 @@ const dotenv = require('dotenv').config();
  */
 const config = require('./config/environments');
 const connectToDB = require('./config/database');
-const store = require('./config/store');
 
 /**
  * UTILS.
@@ -56,8 +55,8 @@ app.use(errorHandler);
  * Connect to MongoDB.
  */
 connectToDB(() => {
-	/**
-	 * Start Express server.
-	 */
-	const server = app.listen(config.port, () => console.log(`Listening on port ${server.address().port}!`));
+  /**
+   * Start Express server.
+   */
+  const server = app.listen(config.port, () => console.log(`Listening on port ${server.address().port}!`));
 });

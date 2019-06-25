@@ -4,7 +4,7 @@
   "description": "Express.js Boilerplate for Node.js",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "cross-env NODE_ENV=testing mocha ./src/test --recursive --timeout 5000",
     "dev": "cross-env NODE_ENV=development node app.js",
     "production": "cross-env NODE_ENV=production node app.js",
     "serve": "nodemon --exec npm run dev"
@@ -27,7 +27,9 @@
     "mongoose": "^5.5.8"
   },
   "devDependencies": {
+    "chai": "^4.2.0",
     "cross-env": "^5.2.0",
+    "mocha": "^6.1.4",
     "nodemon": "^1.19.0"
   }
 }
