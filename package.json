@@ -1,0 +1,33 @@
+{
+  "name": "nodejs-saga",
+  "version": "1.0.0",
+  "description": "Express.js Boilerplate for Node.js",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cross-env NODE_ENV=development node app.js",
+    "production": "cross-env NODE_ENV=production node app.js",
+    "serve": "nodemon --exec npm run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MKostov93/nodejs-saga.git"
+  },
+  "author": "MKostov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MKostov93/nodejs-saga/issues"
+  },
+  "homepage": "https://github.com/MKostov93/nodejs-saga#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.0.0",
+    "express": "^4.16.4",
+    "helmet": "^3.18.0",
+    "mongoose": "^5.5.8"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "nodemon": "^1.19.0"
+  }
+}

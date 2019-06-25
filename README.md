@@ -1,2 +1,1 @@
-# nodejs-saga
-Express.js Boilerplate for Node.js
+<h1 align="center"><strong>Express.js Boilerplate for Node.js</strong></h1>
