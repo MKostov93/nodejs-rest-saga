@@ -17,6 +17,6 @@ const router = express.Router();
 /**
  * Example routes.
  */
-router.get('/example-endpoint', authController.exampleMethod);
+router.get('/example-route', authController.exampleMethod);
 
 module.exports = router;
