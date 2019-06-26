@@ -15,7 +15,7 @@ then
 
 ```sh
 # change directory to project root
-$ cd nodejs-saga
+$ cd into the cloned copy
 # install dependencies
 $ npm install
 ```
