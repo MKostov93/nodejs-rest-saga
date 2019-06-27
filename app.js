@@ -34,6 +34,11 @@ const errorHandler = require('./src/middleware/errorHandler');
 const app = express();
 
 /**
+ * Connect to MongoDB.
+ */
+connectToDB();
+
+/**
  * Express configuration.
  */
 app.use(helmet());
@@ -52,11 +57,6 @@ app.use('/api', routes);
 app.use(errorHandler);
 
 /**
- * Connect to MongoDB.
+ * Start Express server.
  */
-connectToDB(() => {
-  /**
-   * Start Express server.
-   */
-  const server = app.listen(config.port, () => console.log(`Listening on port ${server.address().port}!`));
-});
+app.listen(config.port, () => console.log(`Listening on port ${config.port}!`));

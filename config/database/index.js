@@ -11,11 +11,13 @@ const config = require('../../config/environments');
 /**
  * INITIALIZE.
  */
-const connectToDB = (callbackFn) => {
+const connectToDB = () => {
   mongoose.connect(config.dbURI, { useNewUrlParser: true })
-    .then(result => callbackFn())
+    .then(result => console.log('MongoDB connection successful.'))
     .catch(error => {
-      throw error;
+      console.error(error);
+      console.log('MongoDB connection error. Please make sure MongoDB is running.');
+      process.exit();
     });
 }
 
