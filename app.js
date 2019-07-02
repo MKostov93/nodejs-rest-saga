@@ -44,7 +44,7 @@ connectToDB();
 app.use(helmet());
 app.use(bodyParser.json());
 app.use(express.static(constructPath(['src', 'public'])));
-app.use(setResponseAccessHeaders(config.host));
+app.use(setResponseAccessHeaders());
 
 /**
  * API routes.
