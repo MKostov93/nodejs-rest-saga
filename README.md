@@ -1,6 +1,6 @@
 # Node.js Saga
 
-> Node.js boilerplate for building REST APIs with support for mongoDb.
+> Node.js and Express.js boilerplate for building REST APIs with support for mongoDb.
 
 ## Table of Contents
 * [Install & Use](#install-and-use)
